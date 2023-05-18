@@ -19,20 +19,6 @@ const ListItem = ({uri, scrollX, index, dataLength}) => {
   const isLastItem = dataLength === index + 1;
   const isSecondLastItme = dataLength === index + 2;
 
-  const secondLastItemOutputRange = [
-    SMALL_IMAGE_WIDTH,
-    MEDIUM_IMAGE_WIDTH,
-    MEDIUM_IMAGE_WIDTH,
-    SMALL_IMAGE_WIDTH,
-  ];
-
-  const lastItemOutputRange = [
-    SMALL_IMAGE_WIDTH,
-    LARGE_IMAGE_WIDTH,
-    LARGE_IMAGE_WIDTH,
-    SMALL_IMAGE_WIDTH,
-  ];
-
   const outputRange = isLastItem
     ? [
         SMALL_IMAGE_WIDTH,
